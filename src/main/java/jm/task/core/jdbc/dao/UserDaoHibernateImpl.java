@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDaoHibernateImpl implements UserDao {
-    private final SessionFactory sessionFactory = Util.getConnection();
+    private final SessionFactory sessionFactory = Util.getSessionFactory();
 
 
     public UserDaoHibernateImpl() {
@@ -82,7 +82,6 @@ public class UserDaoHibernateImpl implements UserDao {
             }
         return users;
     }
-
 
 
     @Override
