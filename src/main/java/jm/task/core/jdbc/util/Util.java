@@ -20,9 +20,10 @@ public class Util {
                         .setProperty("hibernate.connection.USERNAME", USERNAME)
                         .setProperty("hibernate.connection.PASSWORD", PASSWORD)
                         .setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect")
-                        .addAnnotatedClass(User.class).setProperty("hibernate.c3p0.min_size","5")
-                        .setProperty("hibernate.c3p0.max_size","200")
-                        .setProperty("hibernate.c3p0.max_statements","200");
+                        .addAnnotatedClass(User.class);
+//                        .addAnnotatedClass(User.class).setProperty("hibernate.c3p0.min_size","5");
+//                        .setProperty("hibernate.c3p0.max_size","200")
+//                        .setProperty("hibernate.c3p0.max_statements","200");
 
                 ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
                         .applySettings(configuration.getProperties()).build();

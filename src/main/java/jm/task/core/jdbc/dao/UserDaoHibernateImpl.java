@@ -55,6 +55,7 @@ public class UserDaoHibernateImpl implements UserDao {
             e.printStackTrace();
 
         }
+
     }
 
     @Override
@@ -81,6 +82,8 @@ public class UserDaoHibernateImpl implements UserDao {
             }
         return users;
     }
+
+
 
     @Override
     public void cleanUsersTable() {
