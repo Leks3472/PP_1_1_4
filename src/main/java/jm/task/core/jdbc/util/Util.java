@@ -18,7 +18,7 @@ public class Util {
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
 
     private static Connection connection;
-    private static SessionFactory sessionFactory = null;
+    private static SessionFactory sessionFactory;
 
     public static Connection getConnection() {
         try {
